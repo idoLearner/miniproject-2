@@ -27,23 +27,23 @@
    <body class="container">
       <%- include('../public/partials/nav.ejs') %>
       <!-- Background image -->
-      <div class="row border-bottom mb-3">
-         <%- include('../public/partials/sidebar.ejs') %>
-
-         <div class="col-9 border-start">
+         <div>
             <main>
-               <h2>
-                  HERO SECTION<br />
-                  TITLE
-               </h2>
-               <h3>
+               <!-- <img src="../public/img/hero.jpg" alt="img"> -->
+               <img
+                        alt="picture"
+                        class="img-fluid"
+                        style="width: 100%; height:70vh;"
+                        src="http://localhost:3000/static/img/hero2.jpg"
+                     />
+               <!-- <h3>
                   NAME: <br />Jerico Olobia <br />
                   Winefredo Sailes <br />
                   Batch 9
-               </h3>
+               </h3> -->
             </main>
          </div>
-      </div>
+      
       <%- include('../public/partials/footer.ejs') %>
       <script
          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

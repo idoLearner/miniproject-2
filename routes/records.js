@@ -28,6 +28,6 @@ recordsRouter.get('/records', (req, res)=>{
         } catch (error) {
             console.log('Error Routes')
         }
-    })
+    }) 
 })
 module.exports = recordsRouter

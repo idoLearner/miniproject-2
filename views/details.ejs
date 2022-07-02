@@ -31,15 +31,12 @@
 
          <div class="col-9 border-start">
             <h1><%=header%></h1>
-            <a href="/records" class="btn btn-dark mb-2 mt-2">Back⬅</a>
+            <a href="/car-details" class="btn btn-dark mb-2 mt-2">Back⬅</a>
             <hr />
             <div class="container">
                <div class="row">
                   <div class="col-6">
-                     <p class="fs-3 fw-bold">
-                        id:
-                        <span class="text-warning"> <%= records.id %> </span>
-                     </p>
+                     
                      <p class="fs-3 fw-bold">
                         Vehicle:<span class="text-warning">
                            <%= records.vehicle%>
@@ -68,10 +65,18 @@
                   <div class="col-md">
                      <img
                         alt="picture"
-                        class="img-fluid"
+                        class="img-fluid rounded"
                         src="http://localhost:3000/static/img/1.jpg"
                      />
                   </div>
+               </div>
+               <div class="col-md">
+                  <p class="fs-3 fw-bold">Performance Graph:</p>
+                  <img
+                     alt="picture"
+                     class="img-fluid"
+                     src="http://localhost:3000/static/img/graph.jpg"
+                  />
                </div>
             </div>
          </div>

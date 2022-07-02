@@ -11,7 +11,7 @@ const recordseditRouter = require("./routes/records-edit.js");
 const cardetailsRouter = require("./routes/car-details.js");
 const detailsRouter = require("./routes/details.js");
 const fileUpload = require("express-fileupload");
-
+ 
 const port = 3000;
 const app = express();
 
@@ -20,7 +20,7 @@ app.set("views", "./views");
 app.set("view engine", "ejs");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-
+ 
 //ROUTES
 app.use(fileUpload());
 app.use("/", addRouter);
@@ -48,4 +48,4 @@ connection.connect(function (error) {
 app.listen(port, () => {
    console.log(`Port is running at ${port}`);
 });
-//
+// 

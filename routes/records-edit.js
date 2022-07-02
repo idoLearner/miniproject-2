@@ -21,7 +21,7 @@ recordseditRouter.get('/records-edit', (req, res)=>{
         // })
         try {
             res.render('records-edit', {
-                header: 'MANAGE RECORDS',
+                header: 'MANAGE VEHICLES',
                 records: records
             })
             // res.json(records)

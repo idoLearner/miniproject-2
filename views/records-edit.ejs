@@ -40,12 +40,19 @@
                data-bs-target="#exampleModal"
                data-bs-whatever="@mdo"
             >
-               ADD
+               ADD NEW
             </button>
+            <div class="col-md">
+               <img
+                  alt="picture"
+                  class="img-fluid"
+                  src="http://localhost:3000/static/img/entries.jpg"
+               />
+            </div>
             <table class="table table-bordered table-striped table-hover">
                <thead class="table-dark">
                   <tr>
-                     <td>VEHICLE ID</td>
+                     <!-- <td>VEHICLE ID</td> -->
                      <td>VEHICLE NAME</td>
                      <td>MAKE AND MODEL</td>
                      <td>YEAR</td>
@@ -57,7 +64,7 @@
                <tbody>
                   <% records.forEach(function (records) { %>
                   <tr>
-                     <td><%= records.id %></td>
+                     
                      <td><%= records.vehicle%></td>
                      <td><%= records.make_model %></td>
                      <td><%= records.year %></td>
@@ -67,7 +74,7 @@
                         <a
                            class="btn btn-primary"
                            href="/edit/<%= records.id %>"
-                           >Edit✏</a
+                           >Edit✍ </a
                         >
                         |
                         <a
@@ -80,6 +87,13 @@
                   <% }) %>
                </tbody>
             </table>
+            <div class="col-md">
+               <img
+                  alt="picture"
+                  class="img-fluid"
+                  src="http://localhost:3000/static/img/show.jpg"
+               />
+            </div>
          </div>
       </div>
       <%- include('../public/partials/footer.ejs') %>
@@ -184,7 +198,7 @@
                      Close
                   </button>
                   <button type="submit" class="btn btn-primary">
-                     new Record
+                     Add New Record
                   </button>
                </form>
             </div>
